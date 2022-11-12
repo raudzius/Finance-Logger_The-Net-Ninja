@@ -1,10 +1,14 @@
-import { Box, Typography } from '@mui/material';
+import { Container, Typography } from '@mui/material';
+import Form from 'components/Form';
 import React from 'react';
 
 const App = () => (
-  <Box>
-    <Typography>App works</Typography>
-  </Box>
+  <Container component="main" maxWidth={false} disableGutters sx={{ textAlign: 'center' }}>
+    <Typography component="h1" variant="h3" color="primary" sx={{ my: 10 }}>
+      Finance Logger
+    </Typography>
+    <Form />
+  </Container>
 );
 
 export default App;
