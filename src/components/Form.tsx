@@ -19,11 +19,13 @@ const Form: React.FC = () => {
   const handleSubmit: React.FormEventHandler<HTMLFormElement> = (e) => {
     e.preventDefault();
 
+const values:[string, string, number] = [toFrom, details, Number(amount)];
+
     let doc: HasFormatter;
     if (type === 'Invoice') {
-      doc = new Invoice(toFrom, details, Number(amount));
+      doc = new Invoice(...values);
     } else {
-      doc = new Payment(toFrom, details, Number(amount));
+      doc = new Payment(...values);
     }
 
     addLog(new Log(doc, type, 'end'));
