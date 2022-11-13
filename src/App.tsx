@@ -5,7 +5,7 @@ import React from 'react';
 
 const App = () => (
   <Container component="main" maxWidth={false} disableGutters sx={{ textAlign: 'center' }}>
-    <Typography component="h1" variant="h3" color="primary" sx={{ my: 10 }}>
+    <Typography component="h1" variant="h3" color="primary" sx={{ mt: 7, mb: 4 }}>
       Finance Logger
     </Typography>
     <LogList />

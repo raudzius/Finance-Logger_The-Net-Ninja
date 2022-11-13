@@ -20,7 +20,7 @@ const Form: React.FC = () => {
     e.preventDefault();
 
     let doc: HasFormatter;
-    if (type === 'invoice') {
+    if (type === 'Invoice') {
       doc = new Invoice(toFrom, details, Number(amount));
     } else {
       doc = new Payment(toFrom, details, Number(amount));
@@ -55,8 +55,8 @@ const Form: React.FC = () => {
         size="small"
         sx={{ width: 108 }}
       >
-        <MenuItem value="invoice">Invoice</MenuItem>
-        <MenuItem value="payment">Payment</MenuItem>
+        <MenuItem value="Invoice">Invoice</MenuItem>
+        <MenuItem value="Payment">Payment</MenuItem>
       </TextField>
       <TextField
         id="to-from"

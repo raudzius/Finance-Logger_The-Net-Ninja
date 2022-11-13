@@ -8,7 +8,7 @@ const LogList = () => {
   let id = 0;
 
   return (
-    <List>
+    <List sx={{ mx: 20, mb: 6 }}>
       {logList.map(({ heading, item }) => {
       id += 1;
       return <LogListItem key={id} heading={heading} item={item} />;
