@@ -35,6 +35,7 @@ const Form: React.FC = () => {
       noValidate
       sx={{
         display: 'flex',
+        flexWrap: 'wrap',
         justifyContent: 'center',
         gap: 4,
         py: 10,
